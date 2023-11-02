@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprite</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <section>
+        <div class="fondo">
+             <div class="personaje"></div>
+
+             <button id="btn"  onmousedown="sound1.play()" class="btn"> ¡HOLA! </button>
+        </div>
+    </section>
+    <section>
+        <div class="contenedor">
+            <ul class="conversacion">
+                <li>...</li>
+                <li>HOLA!</li>
+                <li>Mi nombre es !!!Robonomin¡¡¡</li>
+                <li>en este dia estoy aqui para que hablemos de nomina</li>
+                <li>¿Quieres saber algo?</li>
+                <li>sigueme! y presiona sobre el proximo enlace...</li>
+                <li><a href="prueba.html">vamos ◄◄◄</a> </li>
+            </ul>
+        </div>
+    </section>  
+    <footer>
+       <center> <img class="logo-hechicero" src="imagenes/hechicero-1.png" alt="logo de hechicero"> </center>
+        <p class="copyright">&copy Copyright Ferney-Mesa - 2023</p>
+    </footer>
+
+    <script>
+         var sound1 = new Audio();
+        sound1.src = "musica/presentacionrobot.mp3"
+    </script>
+        
+    
+</body>
+
+</html>

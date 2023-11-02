@@ -1,0 +1,163 @@
+
+.personaje{
+    height: 500px;
+    width: 368.4px;
+    background: url(imagenes/robot-001.png) ;
+    margin: 0 auto;
+    position: absolute;
+    left:4%;
+    bottom: 0px;
+    animation: correr 4s steps(25) infinite;
+}
+
+.fondo{
+    height: 500px;
+    width: 100%;
+    position: relative ;
+    background: url(imagenes/fondo.png);
+}
+
+.btn{
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    color: black;
+    font-size: 30px;
+    border-radius: 100px;
+    left: 700px;
+    margin-top: 40px;
+    background: #ecf0f1;
+    text-align: center;
+}
+
+.contenedor{
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-size: 39px;
+    line-height: 40px;
+    border: 5px solid red;
+    background-color: #ff7b5a;
+
+    overflow: hidden;
+}
+
+.conversacion {
+    list-style: none;
+    padding-left: 25px;
+    margin: 0;
+
+    animation: cambiar 10s normal 1s ;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes cambiar{
+    0% {margin-top: -0;}
+    10%{margin-top: -0;}
+
+    15%{margin-top: -40px;}
+    25%{margin-top: -40px;}
+
+    30%{margin-top: -80px;}
+    40%{margin-top: -80px;}
+
+    45%{margin-top: -120px;}
+    55%{margin-top: -120px;}
+
+    60%{margin-top: -160px ;}
+    70%{margin-top: -160px;}
+
+    75%{margin-top: -200px;}
+    90%{margin-top: -200px;}
+
+    95%{margin-top: -240px;}
+    100%{margin-top: -240px;}
+
+    }
+
+
+@keyframes correr{
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -9210px;
+    }
+    }
+
+
+ .logo-hechicero{
+        text-align:center;
+        font-family: 'Montserrat', sans-serif;
+      
+     }
+
+ .copyright{
+      text-align: center;
+      margin-top: -5px;
+ }
+
+
+ /*vamos*/
+
+ *{
+    box-sizing: border-box;
+ }
+
+ .vamos{
+    background-color: #edeef6;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+button{
+    background-color: #47a386;
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+
+}
+
+.modal-container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;    
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal{
+    border: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+.modal h1{
+    margin: 0;
+}
+
+.modal p{
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+
